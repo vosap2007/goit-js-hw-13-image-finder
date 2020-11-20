@@ -150,6 +150,8 @@ var ImgApiService = /*#__PURE__*/function () {
       return fetch(url).then(function (r) {
         return r.json();
       }).then(function (data) {
+        console.log(data);
+
         _this.incrementPage();
 
         return data.hits;
@@ -201,7 +203,7 @@ refs.buttonLoad.addEventListener("click", onLoadMore);
 function onSearch(e) {
   e.preventDefault();
   clearArticlesContainer();
-  imgApiService.img = e.target.value;
+  imgApiService.img = e.currentTarget.elements.query.value;
   imgApiService.resetPage();
   imgApiService.fetchArticles().then(appendArticlesContainer);
 }

@@ -11,6 +11,7 @@ export default class ImgApiService {
    return fetch(url)
     .then(r => r.json())
        .then(data => {
+           console.log(data);
            this.incrementPage();   
            
            return data.hits;

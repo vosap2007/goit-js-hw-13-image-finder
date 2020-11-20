@@ -17,7 +17,7 @@ function onSearch(e) {
     e.preventDefault();
 
     clearArticlesContainer();
-    imgApiService.img = e.target.value;
+    imgApiService.img = e.currentTarget.elements.query.value;
     imgApiService.resetPage();
     imgApiService.fetchArticles().then(appendArticlesContainer);
 }
