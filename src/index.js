@@ -30,8 +30,7 @@ function appendArticlesContainer(hits) {
     refs.galleryImg.insertAdjacentHTML('beforeend', imgCards
         (hits));
 }
-
+v
 function clearArticlesContainer() {
     refs.galleryImg.innerHTML = '';   
 }
-
