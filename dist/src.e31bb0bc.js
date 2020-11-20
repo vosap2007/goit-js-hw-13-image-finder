@@ -150,8 +150,6 @@ var ImgApiService = /*#__PURE__*/function () {
       return fetch(url).then(function (r) {
         return r.json();
       }).then(function (data) {
-        console.log(data);
-
         _this.incrementPage();
 
         return data.hits;
@@ -247,7 +245,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63517" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59162" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
