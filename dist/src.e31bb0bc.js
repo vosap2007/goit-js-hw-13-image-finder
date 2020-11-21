@@ -180,7 +180,7 @@ exports.default = ImgApiService;
 },{}],"index.js":[function(require,module,exports) {
 "use strict";
 
-var _imgCards = _interopRequireDefault(require("./hbs/imgCards.hbs"));
+var _parcelPluginFoo = _interopRequireDefault(require("./hbs/parcel-plugin-foo.hbs"));
 
 var _apiService = _interopRequireDefault(require("./js/apiService"));
 
@@ -209,15 +209,13 @@ function onLoadMore() {
 }
 
 function appendArticlesContainer(hits) {
-  refs.galleryImg.insertAdjacentHTML('beforeend', (0, _imgCards.default)(hits));
+  refs.galleryImg.insertAdjacentHTML('beforeend', (0, _parcelPluginFoo.default)(hits));
 }
-
-v;
 
 function clearArticlesContainer() {
   refs.galleryImg.innerHTML = '';
 }
-},{"./hbs/imgCards.hbs":"hbs/imgCards.hbs","./js/apiService":"js/apiService.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./hbs/parcel-plugin-foo.hbs":"hbs/parcel-plugin-foo.hbs","./js/apiService":"js/apiService.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -543,6 +541,6 @@ module.exports = function loadHTMLBundle(bundle) {
   });
 };
 },{}],0:[function(require,module,exports) {
-var b=require("../node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("html",require("../node_modules/parcel-bundler/src/builtins/loaders/browser/html-loader.js"));b.load([["imgCards.92457035.html","hbs/imgCards.hbs"]]).then(function(){require("index.js");});
+var b=require("../node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("html",require("../node_modules/parcel-bundler/src/builtins/loaders/browser/html-loader.js"));b.load([["parcel-plugin-foo.b9d80a72.html","hbs/parcel-plugin-foo.hbs"]]).then(function(){require("index.js");});
 },{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js",0], null)
 //# sourceMappingURL=/src.e31bb0bc.js.map

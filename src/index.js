@@ -1,5 +1,5 @@
 //import './css/style.css';
-import imgCards from './hbs/imgCards.hbs';
+import imgCards from './hbs/parcel-plugin-foo.hbs';
 import ImgApiService from './js/apiService';
 
 const refs = {
@@ -30,7 +30,7 @@ function appendArticlesContainer(hits) {
     refs.galleryImg.insertAdjacentHTML('beforeend', imgCards
         (hits));
 }
-v
+
 function clearArticlesContainer() {
     refs.galleryImg.innerHTML = '';   
 }
