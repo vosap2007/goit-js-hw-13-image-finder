@@ -32,7 +32,7 @@ function clearArticlesContainer() {
 
 const onEntry = entries => {
   entries.forEach(entry => {
-      if (entry.isIntersecting && imgApiService.query !=='') {
+      if (entry.isIntersecting && imgApiService.img !=='') {
          imgApiService.fetchArticles().then(appendArticlesContainer);
       }
   });

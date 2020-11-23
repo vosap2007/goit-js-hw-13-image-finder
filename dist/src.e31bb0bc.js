@@ -2436,7 +2436,7 @@ function clearArticlesContainer() {
 
 var onEntry = function onEntry(entries) {
   entries.forEach(function (entry) {
-    if (entry.isIntersecting && imgApiService.query !== '') {
+    if (entry.isIntersecting && imgApiService.img !== '') {
       imgApiService.fetchArticles().then(appendArticlesContainer);
     }
   });
@@ -2475,7 +2475,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50352" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50317" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
